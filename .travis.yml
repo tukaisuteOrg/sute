@@ -17,6 +17,7 @@ script:
   - git branch -a
   - git checkout master
   - git checkout -b gh-pages
+  - rm -f travis_key
   - echo hoge > hoge.txt
 after_success:
   - echo success.
